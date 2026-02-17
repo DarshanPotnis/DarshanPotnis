@@ -1,90 +1,146 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-label="Terminal resume card - dark">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" role="img" aria-label="Darshan Potnis premium terminal resume card (dark)">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0b1220"/>
-      <stop offset="100%" stop-color="#0a0f1a"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#070B14"/>
+      <stop offset="55%" stop-color="#0A1022"/>
+      <stop offset="100%" stop-color="#070A12"/>
     </linearGradient>
 
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.45"/>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.14"/>
+      <stop offset="45%" stop-color="#a78bfa" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#34d399" stop-opacity="0.10"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="22" flood-color="#000" flood-opacity="0.50"/>
     </filter>
 
     <style>
       .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-      .sans { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+      .sans { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
+
+      .title { font-size: 20px; fill: #cbd5e1; opacity: 0.92; }
+      .meta  { font-size: 14px; fill: #94a3b8; opacity: 0.95; }
+
+      .prompt { fill: #93c5fd; }
+      .cmd { fill: #34d399; }
+      .accent { fill: #a78bfa; }
+
+      .body { fill: #e2e8f0; }
+      .dim { fill: #cbd5e1; opacity: 0.92; }
+      .muted { fill: #94a3b8; opacity: 0.92; }
+
+      .chipText { font-size: 13px; fill: #cbd5e1; }
+      .chip { fill: #0e1730; stroke: #22304a; stroke-width: 1; }
+
+      .divider { stroke: #22304a; stroke-width: 1; opacity: 0.85; }
+      .cardStroke { stroke: #22304a; stroke-width: 2; }
+
+      .iconBtn { fill: #0e1730; stroke: #22304a; stroke-width: 1; }
+      .iconGlyph { fill: #cbd5e1; }
     </style>
   </defs>
 
-  <!-- Card -->
-  <rect x="40" y="40" width="1120" height="440" rx="22" fill="url(#bgGrad)" filter="url(#shadow)"/>
-  <rect x="40" y="40" width="1120" height="440" rx="22" fill="none" stroke="#22304a" stroke-width="2"/>
+  <!-- Outer card -->
+  <rect x="50" y="50" width="1500" height="540" rx="28" fill="url(#bg)" filter="url(#shadow)"/>
+  <rect x="50" y="50" width="1500" height="540" rx="28" fill="none" class="cardStroke"/>
 
-  <!-- Title bar -->
-  <rect x="40" y="40" width="1120" height="66" rx="22" fill="#0f172a"/>
-  <rect x="40" y="84" width="1120" height="22" fill="#0f172a"/>
+  <!-- Top glow -->
+  <rect x="50" y="50" width="1500" height="120" rx="28" fill="url(#sheen)"/>
+
+  <!-- Titlebar -->
+  <rect x="50" y="50" width="1500" height="78" rx="28" fill="#0b1220"/>
+  <rect x="50" y="102" width="1500" height="26" fill="#0b1220"/>
 
   <!-- Window controls -->
-  <circle cx="78" cy="73" r="8" fill="#ff5f57"/>
-  <circle cx="104" cy="73" r="8" fill="#febc2e"/>
-  <circle cx="130" cy="73" r="8" fill="#28c840"/>
+  <circle cx="92" cy="88" r="8" fill="#ff5f57"/>
+  <circle cx="118" cy="88" r="8" fill="#febc2e"/>
+  <circle cx="144" cy="88" r="8" fill="#28c840"/>
 
-  <!-- Title -->
-  <text x="170" y="79" class="sans" font-size="18" fill="#cbd5e1" opacity="0.9">
-    terminal — darshan@analytics
-  </text>
+  <!-- Left title -->
+  <text x="185" y="93" class="sans title">terminal — darshan@analytics</text>
 
-  <!-- Content -->
-  <g class="mono" font-size="18" fill="#e2e8f0">
-    <text x="80"  y="150" fill="#93c5fd">┌─[darshan@analytics]</text>
-    <text x="290" y="150" fill="#a78bfa">─[~/profile]</text>
-    <text x="80"  y="178" fill="#93c5fd">└──╼</text>
-    <text x="150" y="178" fill="#34d399">$ whoami</text>
-    <text x="80"  y="212">Data Analyst | Data Engineer | ML + BI | Product Analytics</text>
+  <!-- Right meta (short, no overlap) -->
+  <text x="1020" y="83" class="sans meta">Darshan Potnis • Product Data Engineer / Analyst</text>
+  <text x="1020" y="103" class="sans meta">California, United States</text>
 
-    <text x="80"  y="258" fill="#93c5fd">└──╼</text>
-    <text x="150" y="258" fill="#34d399">$ cat summary.txt</text>
-    <text x="80"  y="292" opacity="0.95">
-      SQL + Python. KPI reporting, funnel/cohort analysis, exec dashboards.
-    </text>
-    <text x="80"  y="318" opacity="0.95">
-      Builds ETL/ELT pipelines, API-based data services, cloud-native workflows.
-    </text>
-    <text x="80"  y="344" opacity="0.95">
-      PostgreSQL • Snowflake • Airflow • AWS/GCP • FastAPI • Data Quality
-    </text>
+  <!-- Clickable icon buttons (Email + LinkedIn) -->
+  <!-- Email button -->
+  <a href="mailto:potnisd@usc.edu" target="_blank" rel="noreferrer">
+    <g transform="translate(1380,70)">
+      <rect x="0" y="0" width="44" height="44" rx="12" class="iconBtn"/>
+      <!-- envelope -->
+      <path class="iconGlyph" d="M12 16h20c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H12c-1.1 0-2-.9-2-2V18c0-1.1.9-2 2-2zm0 3.2l10 7 10-7V18H12v1.2zm20 12.8V22.4l-10 7-10-7V32h20z"/>
+    </g>
+  </a>
 
-    <text x="80"  y="392" fill="#93c5fd">└──╼</text>
-    <text x="150" y="392" fill="#34d399">$ ls -la ~/highlights</text>
-    <text x="80"  y="426" opacity="0.95">
-      • 10M+ record pipelines • ~25% latency improvement • production analytics
-    </text>
-    <text x="80"  y="452" opacity="0.95">
-      • Dashboards, governance, validation, logging, monitoring
-    </text>
+  <!-- LinkedIn button -->
+  <a href="https://www.linkedin.com/in/darshan-potnis-9304a3218/" target="_blank" rel="noreferrer">
+    <g transform="translate(1434,70)">
+      <rect x="0" y="0" width="44" height="44" rx="12" class="iconBtn"/>
+      <!-- LinkedIn "in" (simple) -->
+      <path class="iconGlyph" d="M14 17.5c0 1.2-1 2.2-2.2 2.2S9.6 18.7 9.6 17.5c0-1.2 1-2.2 2.2-2.2s2.2 1 2.2 2.2zM10 31.8h3.6V21.2H10v10.6zM17 21.2h3.4v1.5h.05c.5-.9 1.7-1.8 3.5-1.8 3.7 0 4.4 2.4 4.4 5.6v5.3h-3.6V27c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7v4.9H17V21.2z"/>
+    </g>
+  </a>
+
+  <!-- Inner content frame -->
+  <rect x="90" y="150" width="1470" height="410" rx="20" fill="#070b14" opacity="0.55"/>
+  <rect x="90" y="150" width="1470" height="410" rx="20" fill="none" stroke="#16233b" stroke-width="1"/>
+
+  <!-- Left column content -->
+  <g class="mono" font-size="18">
+    <text x="120" y="194" class="prompt">┌─[darshan@analytics]</text>
+    <text x="345" y="194" class="accent">─[~/resume]</text>
+    <text x="120" y="222" class="prompt">└──╼</text>
+    <text x="190" y="222" class="cmd">$ whoami</text>
+    <text x="120" y="252" class="body">Product Data Engineer • Data Analyst • ML + BI</text>
+
+    <text x="120" y="292" class="prompt">└──╼</text>
+    <text x="190" y="292" class="cmd">$ cat summary.txt</text>
+    <text x="120" y="322" class="dim">SQL + Python. KPI reporting, funnels/cohorts, executive dashboards.</text>
+    <text x="120" y="346" class="dim">Scalable ETL/ELT pipelines + API data services + cloud-native workflows.</text>
+    <text x="120" y="370" class="dim">PostgreSQL • Snowflake • Airflow • AWS/GCP • FastAPI • Data Quality.</text>
+
+    <text x="120" y="412" class="prompt">└──╼</text>
+    <text x="190" y="412" class="cmd">$ ls -la ~/impact</text>
+    <text x="120" y="440" class="body">• 10M+ record pipelines • reduced response time ~25%</text>
+    <text x="120" y="466" class="body">• sub-300ms NLP inference (GPU FastAPI) • A/B latency profiling</text>
+    <text x="120" y="492" class="body">• KPI single source of truth + validation, logging, monitoring</text>
   </g>
 
-  <!-- Footer line -->
-  <rect x="70" y="468" width="1060" height="2" rx="1" fill="#334155"/>
+  <!-- Divider -->
+  <line x1="840" y1="180" x2="840" y2="520" class="divider"/>
 
-  <!-- Tech chips -->
-  <g class="sans" font-size="14" fill="#cbd5e1">
-    <rect x="80" y="485" width="170" height="26" rx="13" fill="#111c33" stroke="#22304a"/>
-    <text x="98" y="503">PostgreSQL</text>
+  <!-- Right column content -->
+  <g class="mono" font-size="16" fill="#e2e8f0">
+    <text x="870" y="208" class="cmd">$ cat experience.txt</text>
 
-    <rect x="260" y="485" width="140" height="26" rx="13" fill="#111c33" stroke="#22304a"/>
-    <text x="278" y="503">Snowflake</text>
+    <text x="870" y="242" class="body">99 Yards — Data Engineer Intern (Remote)</text>
+    <text x="870" y="266" class="muted">• Transformer-based NLP pipelines (HF + FastAPI) on AWS Lambda</text>
+    <text x="870" y="290" class="muted">• REST endpoints for GPT workflows + A/B testing + latency profiling</text>
 
-    <rect x="410" y="485" width="110" height="26" rx="13" fill="#111c33" stroke="#22304a"/>
-    <text x="428" y="503">Airflow</text>
+    <text x="870" y="328" class="body">Scienox Technologies — Data Analyst Intern (Mumbai)</text>
+    <text x="870" y="352" class="muted">• ETL workflows over 10M+ records; validation + executive dashboards</text>
+    <text x="870" y="376" class="muted">• Forecasting (ARIMA/XGBoost/LSTM) + Airflow retraining pipelines</text>
 
-    <rect x="530" y="485" width="90" height="26" rx="13" fill="#111c33" stroke="#22304a"/>
-    <text x="548" y="503">AWS</text>
+    <text x="870" y="418" class="cmd">$ cat education_projects.txt</text>
+    <text x="870" y="450" class="muted">Education: USC (M.S. Applied Data Science) • Mumbai University</text>
+    <text x="870" y="474" class="muted">Projects: GTM Funnel Analytics • KPI Governance Platform • LLM Summarizer</text>
+    <text x="870" y="498" class="muted">Focus: product insights, scalable pipelines, reliability, clean metrics</text>
+  </g>
 
-    <rect x="630" y="485" width="90" height="26" rx="13" fill="#111c33" stroke="#22304a"/>
-    <text x="648" y="503">GCP</text>
-
-    <rect x="730" y="485" width="110" height="26" rx="13" fill="#111c33" stroke="#22304a"/>
-    <text x="748" y="503">FastAPI</text>
+  <!-- Bottom chips -->
+  <g class="sans">
+    <rect x="120" y="566" width="110" height="28" rx="14" class="chip"/><text x="175" y="585" class="chipText" text-anchor="middle">SQL</text>
+    <rect x="238" y="566" width="120" height="28" rx="14" class="chip"/><text x="298" y="585" class="chipText" text-anchor="middle">Python</text>
+    <rect x="366" y="566" width="140" height="28" rx="14" class="chip"/><text x="436" y="585" class="chipText" text-anchor="middle">Snowflake</text>
+    <rect x="514" y="566" width="145" height="28" rx="14" class="chip"/><text x="586" y="585" class="chipText" text-anchor="middle">PostgreSQL</text>
+    <rect x="667" y="566" width="105" height="28" rx="14" class="chip"/><text x="719" y="585" class="chipText" text-anchor="middle">Airflow</text>
+    <rect x="780" y="566" width="80" height="28" rx="14" class="chip"/><text x="820" y="585" class="chipText" text-anchor="middle">AWS</text>
+    <rect x="868" y="566" width="80" height="28" rx="14" class="chip"/><text x="908" y="585" class="chipText" text-anchor="middle">GCP</text>
+    <rect x="956" y="566" width="115" height="28" rx="14" class="chip"/><text x="1013" y="585" class="chipText" text-anchor="middle">FastAPI</text>
+    <rect x="1079" y="566" width="140" height="28" rx="14" class="chip"/><text x="1149" y="585" class="chipText" text-anchor="middle">Power BI</text>
+    <rect x="1227" y="566" width="120" height="28" rx="14" class="chip"/><text x="1287" y="585" class="chipText" text-anchor="middle">Looker</text>
   </g>
 </svg>
-
