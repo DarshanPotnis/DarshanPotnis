@@ -29,7 +29,9 @@
   <circle cx="130" cy="73" r="8" fill="#28c840"/>
 
   <!-- Title -->
-  <text x="170" y="79" class="sans" font-size="18" fill="#334155" opacity="0.9">terminal — darshan@analytics</text>
+  <text x="170" y="79" class="sans" font-size="18" fill="#334155" opacity="0.9">
+    terminal — darshan@analytics
+  </text>
 
   <!-- Content -->
   <g class="mono" font-size="18" fill="#0f172a">
@@ -41,20 +43,30 @@
 
     <text x="80"  y="258" fill="#2563eb">└──╼</text>
     <text x="150" y="258" fill="#059669">$ cat summary.txt</text>
-    <text x="80"  y="292" opacity="0.95">SQL + Python. KPI reporting, funnel/cohort analysis, exec dashboards.</text>
-    <text x="80"  y="318" opacity="0.95">Also builds ETL/ELT pipelines, API-based data services, cloud workflows.</text>
-    <text x="80"  y="344" opacity="0.95">PostgreSQL • Snowflake • Airflow • AWS/GCP • FastAPI • Data Quality.</text>
+    <text x="80"  y="292" opacity="0.95">
+      SQL + Python. KPI reporting, funnel/cohort analysis, exec dashboards.
+    </text>
+    <text x="80"  y="318" opacity="0.95">
+      Builds ETL/ELT pipelines, API-based data services, cloud-native workflows.
+    </text>
+    <text x="80"  y="344" opacity="0.95">
+      PostgreSQL • Snowflake • Airflow • AWS/GCP • FastAPI • Data Quality
+    </text>
 
     <text x="80"  y="392" fill="#2563eb">└──╼</text>
     <text x="150" y="392" fill="#059669">$ ls -la ~/highlights</text>
-    <text x="80"  y="426" opacity="0.95">• Built & optimized pipelines over 10M+ records; improved latency ~25%.</text>
-    <text x="80"  y="452" opacity="0.95">• Delivered dashboards + governance with validation, logging, monitoring.</text>
+    <text x="80"  y="426" opacity="0.95">
+      • 10M+ record pipelines • ~25% latency improvement • production analytics
+    </text>
+    <text x="80"  y="452" opacity="0.95">
+      • Dashboards, governance, validation, logging, monitoring
+    </text>
   </g>
 
-  <!-- Accent footer line -->
+  <!-- Footer line -->
   <rect x="70" y="468" width="1060" height="2" rx="1" fill="#d7deee"/>
 
-  <!-- “badges” look -->
+  <!-- Tech chips -->
   <g class="sans" font-size="14" fill="#334155">
     <rect x="80" y="485" width="170" height="26" rx="13" fill="#ffffff" stroke="#d7deee"/>
     <text x="98" y="503">PostgreSQL</text>
@@ -75,4 +87,3 @@
     <text x="748" y="503">FastAPI</text>
   </g>
 </svg>
-
