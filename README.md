@@ -4,11 +4,9 @@
 
 <p align="center">
   <a href="mailto:potnisd@usc.edu">
-    <img src="https://img.shields.io/badge/Email-potnisd%40usc.edu-00C7B7?style=for-the-badge" />
+    <img src="https://img.shields.io/badge/Email-potnisd%40usc.edu-14b8a6?style=for-the-badge" />
   </a>
-  <a href="https://www.google.com/maps/place/California,+United+States">
-    <img src="https://img.shields.io/badge/Location-California%2C%20United%20States-F59E0B?style=for-the-badge" />
-  </a>
+  <img src="https://img.shields.io/badge/DATA%20ANALYTICS%20%E2%80%A2%20DATA%20ENGINEERING%20%E2%80%A2%20ML%20%2F%20BI-111827?style=for-the-badge" />
   <a href="https://www.linkedin.com/in/darshan-potnis-9304a3218/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" />
   </a>
@@ -32,35 +30,23 @@ monitoring/logging, and cross-functional stakeholder reporting across 10M+ recor
 
 ┌─[darshan@analytics]─[~/core_skills]
 └──╼ $ ls -la
-drwxr-xr-x  Analytics: KPI Design, Funnels/Cohorts, Experimentation, Segmentation, RCA
-drwxr-xr-x  SQL & Warehousing: Snowflake, PostgreSQL, Modeling, Performance Tuning
-drwxr-xr-x  Data Engineering: ETL/ELT, Airflow, Orchestration, CI/CD, Observability
-drwxr-xr-x  Cloud: AWS (S3/EC2/Lambda), GCP (BigQuery), Docker
-drwxr-xr-x  BI: Power BI / Tableau / Looker (Dashboards, Metrics Layers)
-drwxr-xr-x  ML: Forecasting, NLP, Model Serving, Evaluation
-
-┌─[darshan@analytics]─[~/experience]
-└──╼ $ ls -la
-drwxr-xr-x  99 Yards (Remote) - Data Engineer Intern
-drwxr-xr-x  Scienox Technologies (Mumbai) - Data Analyst Intern
+Analytics: KPI Design, Funnels/Cohorts, Experimentation, Segmentation, RCA
+SQL & Warehousing: Snowflake, PostgreSQL, Modeling, Performance Tuning
+Data Engineering: ETL/ELT, Airflow, Orchestration, CI/CD, Observability
+Cloud: AWS (S3/EC2/Lambda), GCP (BigQuery), Docker
+BI: Power BI / Tableau / Looker
+ML: Forecasting, NLP, Model Serving, Evaluation
 
 ┌─[darshan@analytics]─[~/impact]
 └──╼ $ cat highlights.txt
-• Owned recurring KPI datasets + dashboards for weekly decision-making.
-• Built FastAPI/REST services for analytics + model inference; added validation + monitoring.
-• Automated refresh workflows with Airflow/cron; improved freshness and reduced manual work.
-• Optimized data delivery + inference pipelines; improved response time by ~25%.
-• Worked on 10M+ record pipelines supporting executive reporting and product insights.
-
-┌─[darshan@analytics]─[~/projects]
-└──╼ $ ls -la
-drwxr-xr-x  GTM Funnel & Product Analytics (Snowflake/SQL/Python)
-drwxr-xr-x  CFO-Style KPI Governance Platform (SQL/Python/Power BI/PostgreSQL)
-drwxr-xr-x  Time-Series / Telemetry Analytics (Python/SQL/PostgreSQL)
-drwxr-xr-x  LLM/NLP Deployment (HuggingFace/FastAPI/Docker/CUDA)  # optional
+• Owned recurring KPI datasets and dashboards for weekly decision-making.
+• Built FastAPI services for analytics and inference with validation and monitoring.
+• Automated workflows with Airflow/cron; improved freshness and reduced manual work.
+• Optimized pipelines; improved response time by ~25%.
+• Worked on 10M+ record pipelines supporting executive reporting.
 
 ┌─[darshan@analytics]─[~/mission]
 └──╼ $ cat vision.txt
-Transforming complex data into actionable insights 📊
-Building scalable data products & pipelines for decision-making 🚀
-Bridging analytics, engineering, and ML to drive business impact 💡
+Turning complex data into clear decisions 📊
+Building scalable data products 🚀
+Bridging analytics, engineering, and ML 💡
